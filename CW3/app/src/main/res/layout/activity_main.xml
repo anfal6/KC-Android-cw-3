@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:text="Calculater"
+                android:textAlignment="center"
+                android:textColor="#EFE6E6"
+                android:textSize="34sp"
+                tools:layout_editor_absoluteX="39dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="200dp"
+                android:layout_height="61dp"
+                android:text="Total"
+                android:textAlignment="center"
+                android:textColor="#EFE6E6"
+                android:textSize="34sp"
+                tools:layout_editor_absoluteX="105dp"
+                tools:layout_editor_absoluteY="598dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="139dp"
+                android:layout_height="72dp"
+                android:text="calculate"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="460dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="226dp"
+                android:layout_height="68dp"
+                android:background="#E1C6A6"
+                android:ems="10"
+                android:hint="Second number"
+                android:inputType="textPersonName"
+                android:shadowColor="#8E8787"
+                android:textColor="#E1C6A6"
+                android:textColorHighlight="#8E8585"
+                android:textColorLink="#5E5555"
+                tools:layout_editor_absoluteX="94dp"
+                tools:layout_editor_absoluteY="334dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="228dp"
+                android:layout_height="72dp"
+                android:ems="10"
+                android:hint="First number"
+                android:inputType="textPersonName"
+                android:textColor="#FDFCFC"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="204dp"
+                android:background="#E1C6A6"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
